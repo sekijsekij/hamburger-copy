@@ -1,0 +1,28 @@
+.p-contents {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  & > main {
+    width: 80%;
+  }
+
+  & > aside {
+    width: 20%;
+  }
+
+  @include mq(lg) {
+    & > main {
+      width: 100%;
+    }
+
+    & > aside {
+      position: absolute;
+      right: -100%;
+      height: 100%;
+      width: 44%;
+      z-index: 3;
+    }
+  }
+}
+
