@@ -641,7 +641,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 25%;
+  padding-top: 15%;
   padding-bottom: 15%;
   padding-left: 5%;
   background-image: url(images/hero-front.png);
@@ -826,7 +826,7 @@ img {
   color: rgba(255, 255, 255, 0.8);
   font-family: "Roboto", sans-serif;
   white-space: nowrap;
-  margin-bottom: 80%;
+  padding-bottom: 80%;
 }
 
 .c-eat-select-card__title::after {
@@ -839,8 +839,8 @@ img {
 
 .c-eat-select-card__about {
   width: 100%;
-  padding: 7.76% 3.25% 4.27% 4.27%;
-  margin-bottom: 3%;
+  padding: 7% 3% 3% 4%;
+  margin-bottom: 4%;
   background-color: rgba(255, 255, 255, 0.8);
   font-family: "M+ 1m medium";
 }
