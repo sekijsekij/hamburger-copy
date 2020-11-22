@@ -661,11 +661,9 @@ img {
 }
 
 @media screen and (max-width: 575px) {
-  .c-hero {
-    padding-top: 30%;
-    padding-bottom: 30%;
-    padding-left: 6%;
-  }
+  padding-top: 30%;
+  padding-bottom: 30%;
+  padding-left: 6%;
 }
 
 .c-hero--archive {
@@ -860,8 +858,22 @@ img {
   background-image: url(images/takeout.png);
 }
 
+@media screen and (max-width: 575px) {
+  .c-card-eat-select--take-out {
+    width: 100%;
+    margin-top: 6%;
+  }
+}
+
 .c-card-eat-select--eat-in {
   background-image: url(images/eatin.png);
+}
+
+@media screen and (max-width: 575px) {
+  .c-card-eat-select--eat-in {
+    width: 100%;
+    margin-top: 8%;
+  }
 }
 
 .c-card-eat-select__title {
@@ -871,6 +883,12 @@ img {
   font-family: "Roboto", sans-serif;
   white-space: nowrap;
   padding-bottom: 80%;
+}
+
+@media screen and (max-width: 575px) {
+  .c-card-eat-select__title {
+    font-size: 5rem;
+  }
 }
 
 .c-card-eat-select__title::after {
@@ -901,19 +919,6 @@ img {
 .c-card-eat-select__about p {
   font-size: 1.6rem;
   line-height: 1.5;
-}
-
-@media screen and (max-width: 575px) {
-  --take-out {
-    width: 100%;
-    margin-bottom: 6%;
-  }
-  --eat-in {
-    width: 100%;
-  }
-  __title {
-    font-size: 4rem;
-  }
 }
 
 .c-map__wrapper {
@@ -1596,7 +1601,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 5.3% 5.3% 13.1%;
+    padding: 5% 5% 13%;
   }
 }
 

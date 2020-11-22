@@ -6,11 +6,18 @@
 
   &--take-out {
     background-image: url(images/takeout.png);
-
+    @include mq(sm) {
+      width: 100%;
+      margin-top: 6%;
+    }
   }
 
   &--eat-in {
     background-image: url(images/eatin.png);
+    @include mq(sm) {
+      width: 100%;
+      margin-top: 8%;
+    }
   }
 
   &__title {
@@ -21,6 +28,9 @@
     white-space: nowrap;
     padding-bottom: 80%;
 
+    @include mq(sm) {
+      font-size: 5rem;
+    }
 
     &::after {
       content: "";
@@ -54,17 +64,5 @@
     }
     
   }
-      @include mq(sm) {
-        &--take-out {
-          width: 100%;
-          margin-bottom: 6%;
-        }
-
-        &--eat-in {
-              width: 100%;
-        }
-
-        &__title {
-          font-size: 4rem;
-        }
-      }
+     
+      
