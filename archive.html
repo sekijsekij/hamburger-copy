@@ -91,48 +91,50 @@
     </main>
 
 
-  <aside id="drawer">
-    <section class="l-menu">
-      <h2 class="l-menu__title">Menu</h2>
-      <nav class="l-menu__gnav c-gnav">
-        <ul class="c-gnav__menu">
-          <li class="c-gnav__category">
-            <span class="c-gnav__category--title">バーガー</span>
-            <ul>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">ハンバーガー</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">チーズバーガー</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">テリヤキバーガー</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">アボカドバーガー</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">フィッシュバーガー</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">ベーコンバーガー</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">チキンバーガー</a></li>
-            </ul>
-          </li>
-          <li class="c-gnav__category">
-            <span class="c-gnav__category--title">サイド</span>
-            <ul>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">ポテト</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">サラダ</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">ナゲット</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">コーン</a></li>
-            </ul>
-          </li>
-          <li class="c-gnav__category">
-            <span class="c-gnav__category--title">ドリンク</span>
-            <ul>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">コーラ</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">ファンタ</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">オレンジ</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">アップル</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">紅茶（Ice/Hot）</a></li>
-              <li class="c-gnav__item"><a href="#" class="c-gnav__link">コーヒー（Ice/Hot）</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </aside>
+    <aside id="drawer" class="show">
+      <section class="l-menu">
+        <div class="c-menu__icon">✕</div>
+        <h2 class="l-menu__title" id="hambuger">Menu</h2>
+        <nav class="l-menu__gnav c-gnav">
+          <ul class="c-gnav__menu">
+            <li class="c-gnav__category">
+              <span class="c-gnav__category--title">バーガー</span>
+              <ul>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ハンバーガー</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">チーズバーガー</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">テリヤキバーガー</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">アボカドバーガー</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">フィッシュバーガー</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ベーコンバーガー</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">チキンバーガー</a></li>
+              </ul>
+            </li>
+            <li class="c-gnav__category">
+              <span class="c-gnav__category--title">サイド</span>
+              <ul>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ポテト</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">サラダ</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ナゲット</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">コーン</a></li>
+              </ul>
+            </li>
+            <li class="c-gnav__category">
+              <span class="c-gnav__category--title">ドリンク</span>
+              <ul>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">コーラ</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ファンタ</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">オレンジ</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">アップル</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">紅茶（Ice/Hot）</a></li>
+                <li class="c-gnav__item"><a href="#" class="c-gnav__link">コーヒー（Ice/Hot）</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </aside>
   </div><!-- contents -->
+  <div id="filter" class="c-filter"></div>
 
   <footer class="l-footer">
     <p>
@@ -141,5 +143,7 @@
       <a href="#" class="l-footer__text--link">ヒストリー</a></p>
       <small class="l-footer__text">Copyright: RaiseTech</small>
   </footer>
+  <script src="main.js"></script>
+
 </body>
 </html>

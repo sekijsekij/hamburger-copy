@@ -4,10 +4,16 @@
   padding-left: 15%;
   background-color: #f2ede9;
   color: #707070;
+  position: relative;
 
   &__title {
     margin-bottom: 90px;
     font-size: 3.4rem;
     font-weight: 600;
+
+    @include mq(lg) {
+      display: none;
+    }
+   
   }
 }
