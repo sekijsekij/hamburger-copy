@@ -9,25 +9,25 @@
 
 
 // layout
-@import "./css/layout/l-header";
-@import "./css/layout/l-menu";
-@import "./css/layout/l-footer";
+@import "./css/layout/header";
+@import "./css/layout/menu";
+@import "./css/layout/footer";
 
 // object
 @import "./css/object/compornent/c-search";
-@import "./css/object/compornent/c-hero";
-@import "./css/object/compornent/c-hero--archive";
-@import "./css/object/compornent/c-hero-single";
-@import "./css/object/compornent/c-eat-select";
-@import "./css/object/compornent/c-map";
-@import "./css/object/compornent/c-gnav";
-@import "./css/object/compornent/c-filter";
-@import "./css/object/compornent/c-card";
-@import "./css/object/compornent/c-hamburger";
-@import "./css/object/compornent/c-pagenation";
-@import "./css/object/compornent/c-menu";
-@import "./css/object/compornent/c-table";
-@import "./css/object/project/p-eat-select";
-@import "./css/object/project/p-map";
-@import "./css/object/project/p-contents";
-@import "./css/object/project/p-archive";
+@import "./css/object/compornent/hero";
+@import "./css/object/compornent/hero--archive";
+@import "./css/object/compornent/hero-single";
+@import "./css/object/compornent/eat-select";
+@import "./css/object/compornent/map";
+@import "./css/object/compornent/gnav";
+@import "./css/object/compornent/filter";
+@import "./css/object/compornent/card";
+@import "./css/object/compornent/hamburger";
+@import "./css/object/compornent/pagenation";
+@import "./css/object/compornent/menu";
+@import "./css/object/compornent/table";
+@import "./css/object/project/eat-select";
+@import "./css/object/project/map";
+@import "./css/object/project/contents";
+@import "./css/object/project/archive";

@@ -23,10 +23,10 @@
         "css/object/compornent/_c-pagenation.scss",
         "css/object/compornent/_c-menu.scss",
         "css/object/compornent/_c-table.scss",
-        "css/object/project/_p-eat-select.scss",
-        "css/object/project/_p-map.scss",
-        "css/object/project/_p-contents.scss",
-        "css/object/project/_p-archive.scss"
+        "css/object/project/_eat-select.scss",
+        "css/object/project/_map.scss",
+        "css/object/project/_contents.scss",
+        "css/object/project/_archive.scss"
     ],
     "names": [],
     "file": "style.css"
