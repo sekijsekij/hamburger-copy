@@ -55,16 +55,16 @@
     
   }
       @include mq(sm) {
-        .c-eat-select-card--take-out {
+        &--take-out {
           width: 100%;
           margin-bottom: 6%;
         }
 
-        .c-eat-select-card--eat-in {
+        &--eat-in {
               width: 100%;
         }
 
-        .c-eat-select-card__title {
+        &__title {
           font-size: 4rem;
         }
       }
