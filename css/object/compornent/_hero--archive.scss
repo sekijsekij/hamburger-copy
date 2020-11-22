@@ -23,7 +23,7 @@
 
 }
     @include mq(sm) {
-      .c-hero--archive {
+
         padding-top: 18%;
         padding-left: 5%;
         padding-bottom: 18%;
@@ -38,6 +38,5 @@
             white-space: pre;
           }
         }
-      }
 }
 

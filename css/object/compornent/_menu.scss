@@ -1,8 +1,8 @@
 .c-menu__info {
   padding-left: 4%;
   padding-right: 4%;
-
-  &__img {
+   
+  &__top {
     width: 100%;
     height: 45vh;
     margin-bottom: 2%;
@@ -20,8 +20,29 @@
       object-position: 50% 100%;
     }
   }
+  &__img {
+    background-image: url(images/cooked-foods-750073.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding-top: 27%;
+    padding-bottom: 4%;
+    padding-right: 35%;
+    margin-bottom: 2%;
+    margin-right: 4%;
 
-  &__img_end {
+    &-second {
+      background-image: url(images/cooked-foods-750073.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      padding-top: 27%;
+      padding-right: 35%;
+    }
+  }
+
+  &__bottom {
       margin: 4% auto;
       width: 45%;
       height: auto;
@@ -55,7 +76,7 @@
       padding-bottom: 50%;
     }
   }
-
+  
 
   &__text {
       font-family: $jp-fonts;
@@ -177,27 +198,8 @@
             padding-bottom: 8%;
             border-radius: 20px;
             }
-      }
-    }
-  .c-menu__info__img__s {
-        background-image: url(images/cooked-foods-750073.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: auto;
-        padding-top: 27%;
-        padding-bottom: 4%;
-        padding-right: 35%;
-        margin-bottom: 2%;
-        margin-right: 4%;
-      
-        &-second {
-          background-image: url(images/cooked-foods-750073.png);
-          background-size: 100%;
-          background-repeat: no-repeat;
-          width: 100%;
-          padding-top: 27%;
-          padding-right: 35%;
+            
         }
-      }   
-}
+        
+    }
+    }   
