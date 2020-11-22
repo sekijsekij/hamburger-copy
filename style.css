@@ -849,22 +849,22 @@ img {
   }
 }
 
-.c-eat-select-card {
+.c-card-eat-select {
   width: 46%;
   padding: 2.5%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.c-eat-select-card--take-out {
+.c-card-eat-select--take-out {
   background-image: url(images/takeout.png);
 }
 
-.c-eat-select-card--eat-in {
+.c-card-eat-select--eat-in {
   background-image: url(images/eatin.png);
 }
 
-.c-eat-select-card__title {
+.c-card-eat-select__title {
   line-height: 1.6;
   font-size: 7rem;
   color: rgba(255, 255, 255, 0.8);
@@ -873,7 +873,7 @@ img {
   padding-bottom: 80%;
 }
 
-.c-eat-select-card__title::after {
+.c-card-eat-select__title::after {
   content: "";
   display: block;
   height: 4px;
@@ -881,7 +881,7 @@ img {
   background-color: #fff;
 }
 
-.c-eat-select-card__about {
+.c-card-eat-select__about {
   width: 100%;
   padding: 7% 3% 3% 4%;
   margin-bottom: 4%;
@@ -889,29 +889,29 @@ img {
   font-family: "M+ 1m medium";
 }
 
-.c-eat-select-card__about:last-of-type {
+.c-card-eat-select__about:last-of-type {
   margin: 0;
 }
 
-.c-eat-select-card__about h3 {
+.c-card-eat-select__about h3 {
   margin-bottom: 5%;
   font-size: 2.4rem;
 }
 
-.c-eat-select-card__about p {
+.c-card-eat-select__about p {
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
 @media screen and (max-width: 575px) {
-  .c-eat-select-card--take-out {
+  --take-out {
     width: 100%;
     margin-bottom: 6%;
   }
-  .c-eat-select-card--eat-in {
+  --eat-in {
     width: 100%;
   }
-  .c-eat-select-card__title {
+  __title {
     font-size: 4rem;
   }
 }

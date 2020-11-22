@@ -11,15 +11,14 @@
     background-size: cover;
     width:50%;
     height:auto;
-
   }
+ 
 
   &__text-wrapper {
     background-color:  #3c2a10;
     width: 50%;
     height: auto;
     color:  #fff;
-
   }
 
   &__title {
@@ -62,6 +61,10 @@
     font-size: 1.6rem;
   }
 
+  
+
+        
+
   @include mq(sm) {
     
       flex-direction: column;
@@ -85,6 +88,7 @@
       &__sub-title {
         font-size: 1.5rem;
       }
+     
 
       &__about {
         font-size: 1.5rem;
