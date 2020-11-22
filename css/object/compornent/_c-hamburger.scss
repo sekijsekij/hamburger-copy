@@ -1,0 +1,17 @@
+.c-menu__icon {
+  font-size: 5rem;
+  font-weight: 600;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+
+  @include mq(lg2) {
+  display: none;
+  }
+  @include mq(sm) {
+    font-size: 3rem;
+  }
+ 
+}
+
