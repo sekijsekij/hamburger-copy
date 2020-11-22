@@ -1,0 +1,43 @@
+.c-gnav {
+  &__category {
+    font-size: 2rem;
+    font-family: $jp-fonts;
+
+    &--title {
+      display: inline-block;
+      margin-bottom: 45px;
+      font-size: 2.4rem;
+
+      @include mq(lg) {
+        padding-top: 18%;
+      }
+
+      @include mq(sm) {
+        padding-top: 38%;
+        font-size: 1.8rem;
+
+      }
+    }
+
+    & > ul {
+      margin-bottom: 45px;
+    }
+
+    &:last-child > ul {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    text-indent: 1rem;
+
+    @include mq(sm) {
+      font-size: 1.6rem;;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

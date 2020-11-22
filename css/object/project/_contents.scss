@@ -1,0 +1,39 @@
+.p-contents {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  & > main {
+    width: 80%;
+    transition: .4s;
+
+  }
+
+  & > aside {
+    width: 20%;
+    transition: .2s;
+    right: 0;
+
+    &.is_active {
+      right: 0;
+      height: 1000vh;
+    }
+  }
+
+  @include mq(lg) {
+    & > main {
+      width: 100%;
+    }
+
+    & > aside {
+      position: absolute;
+      right: -100%;
+      height: 100%;
+      width: 44%;
+      z-index: 4;
+    }
+   
+    
+  }
+}
+

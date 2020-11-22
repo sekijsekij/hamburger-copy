@@ -1,0 +1,43 @@
+.c-search {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 35%;
+  font-family: $jp-fonts;
+
+  &__text {
+    width: 72%;
+    padding: 10px 10px 10px 35px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    font-size: 2rem;
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 2rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 25%;
+    background-color: #f2ede9;
+    border-radius: 10px;
+    border: 1px solid #707070;
+
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  @include mq(lg) {
+    width: 65%;
+  }
+
+  @include mq() {
+    width: 85%;
+  }
+}

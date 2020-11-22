@@ -1,0 +1,11 @@
+.p-eat-select {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fffdfa;
+  padding: 7% 7% 8% 7%;
+
+  @include mq(sm) {
+    flex-direction: column;
+    padding: 5.3% 5.3% 13.1%;
+  }
+}
