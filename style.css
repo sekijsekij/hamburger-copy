@@ -1333,8 +1333,11 @@ img {
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
+  height: auto;
   padding-top: 27%;
+  padding-bottom: 4%;
   padding-right: 35%;
+  margin-bottom: 2%;
 }
 
 .c-menu__info__bottom {
