@@ -29,8 +29,8 @@
             <div class="c-card__btn-wrapper"><button class="c-card__btn">詳しく見る</button></div>
           </div>
         </article>
-
       <?php endwhile; ?>
+  
     <?php endif; ?>
     <div class="c-pagenation">
       <?php if (function_exists('wp_pagenavi')) {
