@@ -7,11 +7,15 @@
 
   &__text {
     width: 72%;
-    padding: 10px 10px 10px 35px;
+    padding: 10px 20px 10px 45px;
     background-color: #fff;
     border: 1px solid #707070;
     border-radius: 10px;
-    font-size: 2rem;
+    font-size: 1.6rem;
+
+    &:focus {
+      background-color: #fff;
+    }
   }
 
   &__label {
@@ -28,7 +32,6 @@
     background-color: #f2ede9;
     border-radius: 10px;
     border: 1px solid #707070;
-
     font-size: 1.6rem;
     text-align: center;
   }

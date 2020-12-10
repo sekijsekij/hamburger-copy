@@ -1,31 +1,9 @@
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/23e7fd5887.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <title>Hamburger</title>
-</head>
-<body>
-  <div class="p-contents">
-    <main>
-      <header class="l-header">
-        <h1 class="l-header__logo"><a href="#">Hambuger</a></h1>
-        <form action="#" method="get" class="l-header__search c-search">
-          <input type="text" class="c-search__text" id="search">
-          <label class="c-search__label" for="search"><i class="fas fa-search"></i></label>
-          <input type="submit" class="c-search__btn" value="検索">
-        </form>
-        <span class="l-header__menu-btn">Menu</span>
-      </header>
 
+<?php get_header(); ?>
       <main class="l-main">
         <section class="c-hero__single-shop">
-          <h2 class="c-hero__single__text">ショップについて</h2>
+          <h2 class="c-hero__single__text-shop"><?php the_title(); ?></h2>
           
         </section>
 
@@ -60,7 +38,7 @@
           </section>
 
             <section class="c-menu__info">
-              <img src="images/cooked-foods-750073.png" class="c-menu__info__top alt=">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__top alt=">
               <ul class="c-menu__info__wrap">
                 <li class="c-menu__info__wrapper">
                   <p class="c-menu__info__img"></p>
@@ -73,18 +51,18 @@
                   <p class="c-menu__info__text-second">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </li>
               </ul>
-              <img src="images/cooked-foods-750073.png" class="c-menu__info__bottom alt=">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__bottom alt=">
               <!-- grid -->
               <div class="c-menu__info__img-grid">
-                  <img src="images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
-                  <img src="images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
-                  <img src="images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
-                  <img src="images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
-                  <img src="images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
-                  <img src="images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
-                  <img src="images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
-                  <img src="images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
-                  <img src="images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073.png" class="c-menu__info__img_grid alt=">
               </div>
 
               <div class="c-menu__info__about">
@@ -145,59 +123,8 @@
     </main>
 
 
-    <aside id="drawer" class="show">
-      <section class="l-menu">
-        <div class="c-menu__icon">✕</div>
-        <h2 class="l-menu__title" id="hambuger">Menu</h2>
-        <nav class="l-menu__gnav c-gnav">
-          <ul class="c-gnav__menu">
-            <li class="c-gnav__category">
-              <span class="c-gnav__category--title">バーガー</span>
-              <ul>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ハンバーガー</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">チーズバーガー</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">テリヤキバーガー</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">アボカドバーガー</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">フィッシュバーガー</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ベーコンバーガー</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">チキンバーガー</a></li>
-              </ul>
-            </li>
-            <li class="c-gnav__category">
-              <span class="c-gnav__category--title">サイド</span>
-              <ul>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ポテト</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">サラダ</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ナゲット</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">コーン</a></li>
-              </ul>
-            </li>
-            <li class="c-gnav__category">
-              <span class="c-gnav__category--title">ドリンク</span>
-              <ul>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">コーラ</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">ファンタ</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">オレンジ</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">アップル</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">紅茶（Ice/Hot）</a></li>
-                <li class="c-gnav__item"><a href="#" class="c-gnav__link">コーヒー（Ice/Hot）</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </section>
-    </aside>
+    <?php get_sidebar(); ?>
     </div><!-- contents -->
-  
-    <footer class="l-footer">
-      <p>
-        <a href="#" class="l-footer__text--link">ショップ情報</a> 
-        | 
-        <a href="#" class="l-footer__text--link">ヒストリー</a></p>
-        <small class="l-footer__text">Copyright: RaiseTech</small>
-    </footer>
-    <div id="filter" class="c-filter"></div>
-  
-    <script src="js/main.js"></script>
-  </body>
-  </html>
+  <div id="filter" class="c-filter"></div>
+<?php get_footer(); ?>
+    

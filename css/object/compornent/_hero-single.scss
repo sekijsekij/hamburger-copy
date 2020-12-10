@@ -2,39 +2,53 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 15%;
-  padding-bottom: 15%;
-  padding-left: 5%;
-  background-image: url(images/cheese.png);
   font-family: $jp-fonts;
+  position: relative;
+  height: auto;
+  object-fit: cover;
 
-&-shop {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 15%;
-  padding-bottom: 15%;
-  padding-left: 5%;
-  background-image: url(images/single.png);
-  font-family: $jp-fonts;
-
-}
+  &-shop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    background-image: url(images/single.png);
+    font-family: $jp-fonts;
+  }
 
   &__text {
     color: #fff;
     font-size: 4rem;
+    position: absolute;
+    top: 100px;
+    left: 10px;
     font-family: $jp-fonts;
+
+  &-shop {
+    color: #fff;
+    font-size: 4rem;
+    top: 100px;
+    left: 10px;
+    font-family: $jp-fonts;
+  }
 
     @include mq(md) {
       padding-top: 7%;
       padding-bottom: 7%;
       font-size: 3.5rem;
     }
+   
+    &__menu {
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+    }
   }
 }
 
 .c-hero__info {
-
   &__single {
     padding-top: 40%;
   }
@@ -45,7 +59,6 @@
     padding-top: 5%;
     font-size: 2.6rem;
     font-family: $jp-fonts;
-
   }
 
   &__about {
@@ -55,7 +68,6 @@
     font-size: 1.5rem;
     line-height: 1.5;
     font-family: $jp-fonts;
-
   }
 
   &__source {
@@ -67,7 +79,7 @@
     font-size: 1.3rem;
     line-height: 1.8;
     color: #707070;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
 
     @include mq(sm) {
       padding-top: 8%;
@@ -75,28 +87,27 @@
       height: 500px;
       line-height: 1.6;
       font-size: 1.5rem;
-      }
+    }
 
     &__title {
-      padding-left:4%;
+      padding-left: 4%;
       padding-top: 7%;
 
       @include mq(sm) {
-      padding-left:34%;
-      padding-top: 12%;
-
+        padding-left: 34%;
+        padding-top: 12%;
       }
     }
-    
+
     & > p {
-      border: 1px solid  #F7F7F7;
+      border: 1px solid #f7f7f7;
       padding-left: 4%;
       padding-right: 4%;
       font-family: $jp-fonts;
     }
 
     &__secondary {
-      color: #4A6C9B;
+      color: #4a6c9b;
       text-decoration: underline;
       display: inline;
     }
@@ -108,7 +119,6 @@
     padding-top: 5%;
     font-size: 2rem;
     font-family: $jp-fonts;
-
   }
 
   &__about__secondary {
@@ -118,36 +128,32 @@
     font-size: 1.5rem;
     font-family: $jp-fonts;
 
-
     &:last-of-type {
       padding-bottom: 5%;
     }
   }
 
   @include mq(sm) {
-   
     .c-hero__info {
-    &__title {
-      padding-top: 6%;
-    }
+      &__title {
+        padding-top: 6%;
+      }
 
-    &__about {
-      padding-top: 8%;
-    }
+      &__about {
+        padding-top: 8%;
+      }
 
-  &__title__secondary {
-    padding-top: 10%;
-  }
+      &__title__secondary {
+        padding-top: 10%;
+      }
 
-  &__about__secondary {
-    padding-top: 8%;
+      &__about__secondary {
+        padding-top: 8%;
 
-    &:last-of-type {
-      padding-bottom: 10%;
-    }
-  }
+        &:last-of-type {
+          padding-bottom: 10%;
+        }
+      }
     }
   }
 }
-
-

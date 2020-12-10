@@ -1,12 +1,12 @@
 .c-gnav {
   &__category {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: $jp-fonts;
 
     &--title {
       display: inline-block;
-      margin-bottom: 45px;
-      font-size: 2.4rem;
+      padding-bottom: 45px;
+      font-size: 2.2rem;
 
       @include mq(lg) {
         padding-top: 18%;
@@ -29,8 +29,9 @@
   }
 
   &__item {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     text-indent: 1rem;
+    margin-top: 45px;
 
     @include mq(sm) {
       font-size: 1.6rem;;

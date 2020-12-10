@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -545,7 +546,7 @@ img {
   .l-header__menu-btn {
     top: 14px;
     right: 19px;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -605,15 +606,11 @@ img {
 
 .c-search__text {
   width: 72%;
-  padding: 10px 20px 10px 45px;
+  padding: 10px 10px 10px 35px;
   background-color: #fff;
   border: 1px solid #707070;
   border-radius: 10px;
-  font-size: 1.6rem;
-}
-
-.c-search__text:focus {
-  background-color: #fff;
+  font-size: 2rem;
 }
 
 .c-search__label {
@@ -663,6 +660,12 @@ img {
   font-family: "M+ 1m medium";
 }
 
+/* @media screen and (max-width: 575px) {
+  padding-top: 30%;
+  padding-bottom: 30%;
+  padding-left: 6%;
+} */
+
 .c-hero--archive {
   background-image: url(images/hero-archive.png);
   background-position: center;
@@ -676,7 +679,7 @@ img {
 
 .c-hero--archive__text {
   color: #fff;
-  font-size: 4.5rem;
+  font-size: 6rem;
   font-weight: bold;
 }
 
@@ -687,28 +690,28 @@ img {
   margin-left: 2%;
 }
 
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
   padding-top: 18%;
   padding-left: 5%;
   padding-bottom: 18%;
   __text {
     font-size: 4rem;
-  }
-  __category::before {
+  } */
+  /* __category::before {
     content: "\A";
     white-space: pre;
   }
-}
+} */
 
 .c-hero__single {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  background-image: url(images/cheese.png);
   font-family: "M+ 1m medium";
-  position: relative;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .c-hero__single-shop {
@@ -725,17 +728,6 @@ img {
 .c-hero__single__text {
   color: #fff;
   font-size: 4rem;
-  position: absolute;
-  top: 100px;
-  left: 10px;
-  font-family: "M+ 1m medium";
-}
-
-.c-hero__single__text-shop {
-  color: #fff;
-  font-size: 4rem;
-  top: 100px;
-  left: 10px;
   font-family: "M+ 1m medium";
 }
 
@@ -745,13 +737,6 @@ img {
     padding-bottom: 7%;
     font-size: 3.5rem;
   }
-}
-
-.c-hero__single__text__menu {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: auto;
 }
 
 .c-hero__info__single {
@@ -784,7 +769,7 @@ img {
   font-size: 1.3rem;
   line-height: 1.8;
   color: #707070;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
 }
 
 @media screen and (max-width: 575px) {
@@ -810,14 +795,14 @@ img {
 }
 
 .c-hero__info__source > p {
-  border: 1px solid #f7f7f7;
+  border: 1px solid  #F7F7F7;
   padding-left: 4%;
   padding-right: 4%;
   font-family: "M+ 1m medium";
 }
 
 .c-hero__info__source__secondary {
-  color: #4a6c9b;
+  color: #4A6C9B;
   text-decoration: underline;
   display: inline;
 }
@@ -891,7 +876,7 @@ img {
 
 .c-card-eat-select__title {
   line-height: 1.6;
-  font-size: 6rem;
+  font-size: 7rem;
   color: rgba(255, 255, 255, 0.8);
   font-family: "Roboto", sans-serif;
   white-space: nowrap;
@@ -1035,14 +1020,14 @@ img {
 }
 
 .c-gnav__category {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "M+ 1m medium";
 }
 
 .c-gnav__category--title {
   display: inline-block;
-  padding-bottom: 45px;
-  font-size: 2.2rem;
+  margin-bottom: 45px;
+  font-size: 2.4rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1067,9 +1052,8 @@ img {
 }
 
 .c-gnav__item {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   text-indent: 1rem;
-  margin-top: 45px;
 }
 
 @media screen and (max-width: 575px) {
@@ -1101,8 +1085,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-top: 5%;
-  padding-left: 4%;
-  padding-right: 4%;
   margin-bottom: 5%;
   width: 100%;
   height: 400px;
@@ -1110,14 +1092,10 @@ img {
 
 .c-card__main {
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: url(images/card.png);
+  background-size: cover;
   width: 50%;
-  height: 400px;
-}
-
-.c-card__main > img {
-  height: 400px;
+  height: auto;
 }
 
 .c-card__text-wrapper {
@@ -1221,45 +1199,88 @@ img {
   }
 }
 
-.wp-pagenavi a, .wp-pagenavi span {
-  color: #999;
-  background-color: #FFF;
-  border: solid 1px #999;
-  padding: 8px 15px;
-  margin: 0 10px;
-  white-space: nowrap;
-  border-radius: 3px;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.wp-pagenavi a:hover {
-  color: #FFF;
-  background-color: #3c2a10;
-  border-color: #3c2a10;
-}
-
-.wp-pagenavi span.current {
-  color: #FFF;
-  background-color: #3c2a10;
-  border-color: #3c2a10;
-  font-weight: bold;
-}
-
 .c-pagenation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 70%;
   font-size: 1.6rem;
   color: #707070;
-  margin-bottom: 55px;
+}
+
+.c-pagenation__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.c-pagenation__link {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.c-pagenation__link.current {
+  color: #707070;
+  background-color: #707070;
+}
+
+.c-pagenation__link.prev, .c-pagenation__link.next {
+  border: none;
+}
+
+.c-pagenation__link > i {
+  -webkit-transform: scale(1.5, 2.8);
+          transform: scale(1.5, 2.8);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .c-pagenation__link {
+    padding: 5px 9px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .c-pagenation {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .c-pagenation__current {
+    display: none;
+  }
+  .c-pagenation__pages {
+    width: 100%;
+  }
+  .c-pagenation__link.number {
+    display: none;
+  }
+  .c-pagenation__link.prev > i, .c-pagenation__link.next > i {
+    -webkit-transform: scale(1, 1.5);
+            transform: scale(1, 1.5);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .c-pagenation__link.prev::after {
+    content: "前へ";
+    margin-left: 20px;
+  }
+  .c-pagenation__link.next::before {
+    content: "次へ";
+    margin-right: 20px;
+  }
 }
 
 .c-menu__info {
