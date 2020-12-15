@@ -724,11 +724,21 @@ img {
 
 .c-hero__single__text {
   color: #fff;
+  color: #fff;
   font-size: 4rem;
   position: absolute;
-  top: 100px;
-  left: 10px;
+  top: 34%;
+  left: 7%;
   font-family: "M+ 1m medium";
+}
+
+@media screen and (max-width: 750px) {
+  .c-hero__single__text {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 0;
+    left: 7%;
+  }
 }
 
 .c-hero__single__text-shop {
@@ -748,10 +758,19 @@ img {
 }
 
 .c-hero__single__text__menu {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  background-image: url(images/cheese.png);
+}
+
+@media screen and (max-width: 750px) {
+  .c-hero__single__text__menu {
+    font-size: 3.5rem;
+  }
 }
 
 .c-hero__info__single {
@@ -1562,6 +1581,21 @@ img {
     padding-left: 9%;
     padding-bottom: 5%;
   }
+}
+
+.main-404 {
+  height: 230px;
+  text-align: center;
+}
+
+.container-404 p {
+  font-size: 1.8rem;
+  color: #3c2a10;
+  padding-top: 6%;
+}
+
+.container-404 p .text-404 {
+  text-decoration: underline;
 }
 
 .p-eat-select {

@@ -20,30 +20,46 @@
 
   &__text {
     color: #fff;
-    font-size: 4rem;
-    position: absolute;
-    top: 100px;
-    left: 10px;
-    font-family: $jp-fonts;
-
-  &-shop {
     color: #fff;
     font-size: 4rem;
-    top: 100px;
-    left: 10px;
+    position: absolute;
+    top: 34%;
+    left: 7%;
     font-family: $jp-fonts;
-  }
+
+    @include mq(md) {
+      font-size: 3.5rem;
+      position: absolute;
+      top: 0;
+      left: 7%;
+    }
+
+    &-shop {
+      color: #fff;
+      font-size: 4rem;
+      top: 100px;
+      left: 10px;
+      font-family: $jp-fonts;
+    }
 
     @include mq(md) {
       padding-top: 7%;
       padding-bottom: 7%;
       font-size: 3.5rem;
     }
-   
+
     &__menu {
-      width: 100%;
-      object-fit: cover;
-      height: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 15%;
+      padding-bottom: 15%;
+      padding-left: 5%;
+      background-image: url(images/cheese.png);
+
+      @include mq(md) {
+        font-size: 3.5rem;
+      }
     }
   }
 }

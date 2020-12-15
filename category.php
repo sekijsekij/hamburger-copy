@@ -19,7 +19,7 @@
             <h3 class="c-card__title"><?php the_title(); ?></h3>
             <h4 class="c-card__sub-title">小見出しが入ります</h4>
             <p class="c-card__about">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <div class="c-card__btn-wrapper"><button class="c-card__btn">詳しく見る</button></div>
+            <div class="c-card__btn-wrapper"><button class="c-card__btn">><a href="<?php the_permalink(); ?>">詳しく見る</a></button></div>
           </div>
         </article>
       <?php endwhile; ?>
