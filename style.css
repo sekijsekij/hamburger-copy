@@ -688,9 +688,6 @@ img {
 }
 
 @media screen and (max-width: 575px) {
-  padding-top: 18%;
-  padding-left: 5%;
-  padding-bottom: 18%;
   __text {
     font-size: 4rem;
   }
